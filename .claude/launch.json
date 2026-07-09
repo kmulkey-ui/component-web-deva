@@ -5,8 +5,7 @@
       "name": "component-showcase",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 3000,
-      "cwd": "C:\\Users\\kmulk\\Desktop\\component-showcase"
+      "port": 3000
     }
   ]
 }

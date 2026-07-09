@@ -2,6 +2,48 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* ── Helvetica Now Display ──────────────────────────────────────────── */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Hairline.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Hairline.woff") format("woff");
+  font-weight: 100; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Thin.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Thin.woff") format("woff");
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Light.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Light.woff") format("woff");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Regular.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Regular.woff") format("woff");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Medium.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Medium.woff") format("woff");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/hnd/HelveticaNowDisplay-Bold.woff2") format("woff2"),
+       url("/fonts/hnd/HelveticaNowDisplay-Bold.woff") format("woff");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+:root {
+  --font-hnd: "Helvetica Now Display", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

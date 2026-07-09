@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { components, categoryStyle } from "@/lib/registry";
+import { components } from "@/lib/registry";
 import { ComponentRenderer } from "@/components/component-renderer";
 
 interface Props {
@@ -16,49 +16,32 @@ export default async function PreviewPage({ params }: Props) {
   const entry = components.find((c) => c.slug === slug);
   if (!entry) notFound();
 
-  const style = categoryStyle[entry.category];
-
   return (
-    <div
-      className="min-h-screen flex flex-col"
-      style={{ background: "linear-gradient(135deg, #fce7f3 0%, #f3e8ff 35%, #e0f2fe 70%, #fce7f3 100%)" }}
-    >
+    <div className="min-h-screen flex flex-col bg-white text-black" style={{ fontFamily: "var(--font-hnd)" }}>
       {/* Top bar */}
-      <header
-        className="flex items-center justify-between px-5 py-3 z-50 sticky top-0 border-b"
-        style={{
-          background: "rgba(255,255,255,0.82)",
-          backdropFilter: "blur(14px)",
-          borderColor: "rgba(236,72,153,0.12)",
-        }}
-      >
+      <header className="sticky top-0 z-50 flex items-center justify-between border-b border-black/10 bg-white/85 px-5 py-3 backdrop-blur-md">
         <Link
           href="/"
-          className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-800 transition-colors"
-          style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
+          className="flex items-center gap-2 text-sm text-neutral-500 transition-colors hover:text-black"
+          style={{ fontWeight: 300 }}
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
           </svg>
-          Gallery
+          Library
         </Link>
 
         <div className="flex items-center gap-3">
-          <span
-            className={`text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded-full ${style.badge}`}
-            style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-          >
+          <span className="text-[10px] tracking-[0.25em] uppercase text-neutral-400" style={{ fontWeight: 400 }}>
             {entry.category}
           </span>
-          <span
-            className="font-bold tracking-[0.15em] uppercase text-gray-700"
-            style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "11px" }}
-          >
+          <span className="h-3 w-px bg-black/15" />
+          <span className="text-sm tracking-tight text-black" style={{ fontWeight: 300 }}>
             {entry.name}
           </span>
         </div>
 
-        <div style={{ width: "64px" }} />
+        <div style={{ width: "72px" }} />
       </header>
 
       {/* Component preview */}

@@ -162,4 +162,53 @@ export const components: ComponentEntry[] = [
   { slug: "circular-testimonials", name: "Circular Testimonials",  category: "Showcase & Display",       description: "Testimonial quotes rotating around a circular orbit layout.",         darkBg: true },
   { slug: "map",                   name: "Interactive Map",         category: "Showcase & Display",       description: "Embeddable interactive map with custom markers and popups.",          darkBg: true },
   { slug: "gallery",               name: "Photo Gallery",           category: "Showcase & Display",       description: "Animated photo gallery with staggered entrance and drag-to-dismiss.", darkBg: false },
+
+  // ══ Imported from the Matt Chapin & Katelyn Mulkey sites ══════════════════
+  // ── Text & Typography ──
+  { slug: "morphing-text",         name: "Morphing Text",          category: "Text & Typography",        description: "Text that fluidly morphs between words with a blur filter.",         darkBg: true },
+  { slug: "word-rotate",           name: "Word Rotate",            category: "Text & Typography",        description: "Words that rotate in and out with spring motion.",                    darkBg: false },
+  { slug: "animated-shiny-text",   name: "Animated Shiny Text",    category: "Text & Typography",        description: "Text with a light shimmer sweeping across it.",                       darkBg: false },
+  { slug: "sparkles-text",         name: "Sparkles Text",          category: "Text & Typography",        description: "Text sprinkled with twinkling animated sparkles.",                    darkBg: false },
+  { slug: "velocity-marquee",      name: "Velocity Marquee",       category: "Text & Typography",        description: "Scroll-reactive marquee that speeds up as you scroll.",               darkBg: false },
+  { slug: "particle-text",         name: "Particle Text",          category: "Text & Typography",        description: "WebGL particle field that forms text and reacts to the cursor.",      darkBg: true },
+  { slug: "neon-rgb-text",         name: "Neon RGB Text",          category: "Text & Typography",        description: "Glowing neon text with shifting RGB chromatic edges.",                darkBg: true },
+
+  // ── Buttons & Actions ──
+  { slug: "liquid-glass-button",   name: "Liquid Glass Button",    category: "Buttons & Actions",        description: "Frosted liquid-glass button with a refractive sheen.",                darkBg: false },
+  { slug: "win-98-button",         name: "Windows 98 Button",      category: "Buttons & Actions",        description: "Retro Windows 98 beveled button.",                                    darkBg: false },
+  { slug: "rainbow-button",        name: "Rainbow Button",         category: "Buttons & Actions",        description: "Button wrapped in an animated rainbow gradient glow.",                darkBg: true },
+  { slug: "confetti",              name: "Confetti Button",        category: "Buttons & Actions",        description: "Button that bursts canvas confetti on click.",                        darkBg: false },
+
+  // ── Cards & Panels ──
+  { slug: "border-sheen-card",     name: "Border Sheen Card",      category: "Cards & Panels",           description: "Card edged with a rotating conic-gradient sheen.",                    darkBg: false },
+  { slug: "holographic-pricing-card", name: "Holographic Pricing Card", category: "Cards & Panels",     description: "Pricing card with a tilt-reactive holographic finish.",               darkBg: true },
+  { slug: "glow-cards",            name: "Glow Cards",             category: "Cards & Panels",           description: "Angled cards with vivid gradient glow panels.",                       darkBg: true },
+  { slug: "gradient-shader-card",  name: "Gradient Shader Card",   category: "Cards & Panels",           description: "Card backed by a live grainy Three.js gradient shader.",              darkBg: true },
+  { slug: "image-spotlight",       name: "Image Spotlight",        category: "Cards & Panels",           description: "Image that tilts in 3D with a cursor-tracking spotlight.",            darkBg: false },
+
+  // ── Backgrounds & Atmosphere ──
+  { slug: "background-gradient-animation", name: "Background Gradient Animation", category: "Backgrounds & Atmosphere", description: "Full-screen morphing multi-color gradient blobs.",         darkBg: true },
+  { slug: "blobs",                 name: "Animated Blobs",         category: "Backgrounds & Atmosphere", description: "Soft organic blobs drifting in the background.",                      darkBg: false },
+  { slug: "particles",             name: "Particles",              category: "Backgrounds & Atmosphere", description: "Configurable canvas particle field.",                                 darkBg: true },
+  { slug: "mouse-sparkles",        name: "Mouse Sparkles",         category: "Backgrounds & Atmosphere", description: "Sparkles that trail the cursor across the screen.",                   darkBg: true },
+  { slug: "interactive-dots",      name: "Interactive Dots",       category: "Backgrounds & Atmosphere", description: "Dot grid that ripples in response to the cursor.",                    darkBg: true },
+  { slug: "glitch-background",     name: "Glitch Background",      category: "Backgrounds & Atmosphere", description: "GLSL glitch/scanline animated background.",                           darkBg: true },
+  { slug: "organic-gradient-background", name: "Organic Gradient Background", category: "Backgrounds & Atmosphere", description: "Flowing organic gradient driven by Three.js + GSAP.",         darkBg: true },
+  { slug: "shader-background",     name: "Shader Background",      category: "Backgrounds & Atmosphere", description: "Animated fragment-shader gradient background (OGL).",                 darkBg: true },
+  { slug: "wave-scene",            name: "Wave Scene",             category: "Backgrounds & Atmosphere", description: "Parallax image scene that drifts on scroll.",                         darkBg: true },
+  { slug: "aurora-shader",         name: "Aurora Shader",          category: "Backgrounds & Atmosphere", description: "Aurora-like flowing shader gradient.",                                darkBg: true },
+  { slug: "dithering-shader",      name: "Dithering Shader",       category: "Backgrounds & Atmosphere", description: "Retro dithered shader pattern.",                                      darkBg: true },
+  { slug: "warp-shader",           name: "Warp Shader",            category: "Backgrounds & Atmosphere", description: "Warping liquid shader field.",                                        darkBg: true },
+  { slug: "web-gl-shader",         name: "WebGL Shader",           category: "Backgrounds & Atmosphere", description: "Raw WebGL fragment-shader animation.",                                darkBg: true },
+  { slug: "revolution-shader",     name: "Revolution Shader",      category: "Backgrounds & Atmosphere", description: "GSAP-driven revolving shader visual.",                                darkBg: true },
+
+  // ── Sliders & Carousels ──
+  { slug: "circular-gallery",      name: "Circular Gallery",       category: "Sliders & Carousels",      description: "Images arranged on a rotating 3D circular carousel.",                 darkBg: true },
+  { slug: "scroll-morph-hero",     name: "Scroll Morph Hero",      category: "Sliders & Carousels",      description: "Portfolio hero whose gallery morphs as you scroll.",                  darkBg: true },
+
+  // ── Showcase & Display ──
+  { slug: "circular-reveal-heading", name: "Circular Reveal Heading", category: "Showcase & Display",    description: "Circular text heading that reveals images on hover.",                 darkBg: false },
+  { slug: "gravity",               name: "Gravity",                category: "Showcase & Display",       description: "Draggable chips with real Matter.js physics gravity.",                darkBg: true },
+  { slug: "ensemble-accordion",    name: "Ensemble Accordion",     category: "Showcase & Display",       description: "Hover-expanding image accordion panels.",                             darkBg: false },
+  { slug: "audio-player",          name: "Audio Player",           category: "Showcase & Display",       description: "Full audio player with playlist, scrub, shuffle and repeat.",         darkBg: true },
 ];

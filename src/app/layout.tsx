@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${dmSans.variable} h-full`}
     >
-      <body className="min-h-full" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+      <body className="min-h-full" style={{ fontFamily: "var(--font-hnd)", fontWeight: 300 }}>
         {children}
       </body>
     </html>
